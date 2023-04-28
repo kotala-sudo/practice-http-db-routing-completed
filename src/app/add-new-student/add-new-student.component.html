@@ -1,0 +1,32 @@
+<div class="container">
+  <h1>HTTP-Example</h1>
+  <div class="card">
+    <div class="card-body">
+      <div class="form-group">
+        <input
+          class="form-control"
+          type="text"
+          [(ngModel)]="sName"
+          placeholder="Student Name"
+        />
+      </div>
+      <div class="form-group">
+        <input
+          class="form-control"
+          type="text"
+          [(ngModel)]="sAge"
+          placeholder="Student Age"
+        />
+      </div>
+      <div class="form-group">
+        <button
+          class="btn btn-primary"
+          routerLink="/student-list"
+          (click)="addNewStudent()"
+        >
+          Add Student
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
